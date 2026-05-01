@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Background Colors */
+  --color-bg-primary: #1b1a21;
+  --color-bg-secondary: #1e1d24;
+  --color-bg-tertiary: #201f27;
+  --color-bg-card: #26252e;
+  --color-bg-card-hover: #2f2e38;
+  --color-bg-surface: #24232c;
+  --color-bg-modal: #1d1c23;
+  --color-bg-input: #25242d;
+  --color-bg-create: #1c1b22;
+  --color-bg-create-hover: #22212a;
+  /* Border Colors */
+  --color-border-primary: #2b2a33;
+  --color-border-secondary: #32313c;
+  /* Text Colors */
+  --color-text-primary: #f9f9fa;
+  --color-text-secondary: #b1b0b8;
+  --color-text-muted: #6a6974;
+  --color-text-heading: #f9f9fa;
+  /* Accent/Primary Colors */
+  --color-accent-primary: #52515e;
+  --color-accent-hover: #63626f;
+  --color-accent-light: #9190a0;
+  /* Status Colors */
+  --color-status-online: #3cba30;
+  --color-status-starting: #ffe4b5;
+  --color-status-stopping: #ffcccb;
+  --color-status-offline: #adadad;
+  --color-error: #ef4444;
+  --color-error-light: #f87171;
+  --color-success: #2d8c24;
+  --color-warning: #eab308;
+}
