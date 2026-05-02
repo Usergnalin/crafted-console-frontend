@@ -2,12 +2,11 @@ import axios from "axios"
 
 export function create_clients(on_refresh_fail) {
     const auth_client = axios.create({
-        baseURL: "/api",
+        baseURL: import.meta.env.VITE_API_BASE,
         withCredentials: true,
     })
-
     const client = axios.create({
-        baseURL: "/api",
+        baseURL: import.meta.env.VITE_API_BASE,
         withCredentials: true,
     })
 
@@ -69,7 +68,8 @@ export function create_clients(on_refresh_fail) {
 
         const connect = () => {
             if (destroyed) return
-            eventSource = new EventSource(`/api${path}`, { withCredentials: true })
+            const url = `${import.meta.env.VITE_API_BASE}${path}`
+            eventSource = new EventSource(url, { withCredentials: true })
             eventSource.onopen = () => handlers.onOpen?.()
             eventSource.onerror = async () => {
                 eventSource.close()

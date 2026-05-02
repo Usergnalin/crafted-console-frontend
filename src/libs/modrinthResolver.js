@@ -193,7 +193,6 @@ export async function resolveDependencies(targetProjectId, targetVersionId, inst
     }
   }
 
-  console.log(result)
   return result;
 }
 
